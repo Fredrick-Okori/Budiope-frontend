@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.sidebar {
+  position: fixed;
+ 
+  /* Adjust based on your navbar height */
+  left: -250px;
+  /* Adjust based on your sidebar width */
+  height: calc(100vh - 56px);
+  width: 250px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
